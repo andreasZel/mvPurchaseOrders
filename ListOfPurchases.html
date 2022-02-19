@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="../PurchaseOrders_List/ListStyle.css" type="text/css">
+        <title> PurchaseOrders List </title>
+    </head>
+        
+    <body onload="displayList();">
+
+        <div id="orders" >
+            <br> <h3> mvPurchaseOrders </h3> <br>
+            <ul id="listOfP">
+                <!-- the list that will contain the Purchases-->    
+            </ul> 
+        </div>
+
+        <div class="popup">
+            <span class="popuptext" id="myPopup" onclick="closepopup();">
+                
+                <br><br>
+                
+                <p id="PurchaseOrderAddress"></p> <br>
+                <p id="PurchaseOrderContactPerson"></p> <br>
+                <p id="PurchaseOrderStatus"></p> <br>
+                
+                <table id="tbl">
+                    <!-- the table that will contain ProductSKU, RowQuantity, RowUnitPriceWithoutTaxOrDiscount, RowTotalAmount -->
+                </table>
+            </span>
+        </div>
+
+        <script type="text/javascript" src="../PurchaseOrders_List/Get_Edit_JSON.js"></script>
+
+    </body>
+</html>
