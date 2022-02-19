@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    height: 20px;
+    width: 100%;
+    color: rgb(206, 206, 206);
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+tr {
+    width : 100%;
+    color: rgb(206, 206, 206);
+}
+
+#orders{
+    position: absolute;
+    top:0px;
+    left:0px;
+
+    font-size: 30px;
+    width : 100%;
+    height: 100%;
+    text-align: center; 
+}
+
+h3 {
+    padding-left: 30px;
+}
+
+ul {
+    list-style-type:none; 
+    left: 0px;
+    width : 100%;
+    margin : auto;
+}
+
+/* Popup container */
+.popup {
+    visibility: hidden;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+/* popup */
+.popup .popuptext {
+    text-align: center;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(85, 85, 85);
+    margin: auto;
+    position: absolute;
+}
+
+/* Toggle this class when clicking on the popup container */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
